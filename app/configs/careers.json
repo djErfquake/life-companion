@@ -1,0 +1,349 @@
+{
+  "careers": {
+    "careerPath": [
+      {
+        "name": "Time Machine Mercenary",
+        "job": [
+          {
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "MinuteMan",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Viking",
+            "jobSalary": "20000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Trojan",
+            "jobSalary": "60000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Knight",
+            "jobSalary": "100000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Conquistador",
+            "jobSalary": "300000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Pirate",
+            "jobSalary": "700000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Ninja",
+            "jobSalary": "1000000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Cyborg Army",
+            "jobSalary": "2000000",
+            "jobDegree": "3"
+          }
+        ]
+      },
+      {
+        "name": "Mascot",
+        "job": [
+          {
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "High School Mascot",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Taco Bell Dog Trainer",
+            "jobSalary": "15000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Energizer Bunny",
+            "jobSalary": "45000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Geico Caveman",
+            "jobSalary": "100000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Capital One Viking",
+            "jobSalary": "200000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Six Flags Guy",
+            "jobSalary": "600000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Ronald McDonald",
+            "jobSalary": "1000000",
+            "jobDegree": "2"
+          },
+          {
+            "jobName": "Muppet",
+            "jobSalary": "1500000",
+            "jobDegree": "2"
+          }
+        ]
+      },
+      {
+        "name": "Pokemon Trainer",
+        "job": [
+          {
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Bug Catcher",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Super Nerd",
+            "jobSalary": "10000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Biker",
+            "jobSalary": "50000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Fisherman",
+            "jobSalary": "75000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Bird Keeper",
+            "jobSalary": "150000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Gym Leader",
+            "jobSalary": "800000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Elite Four",
+            "jobSalary": "1000000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Pokemon Master",
+            "jobSalary": "1200000",
+            "jobDegree": "2"
+          }
+        ]
+      },
+      {
+        "name": "Jedi",
+        "job": [
+          {
+            "jobName": "Gungan",
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Farmer",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Storm Trooper",
+            "jobSalary": "20000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Pod Racer",
+            "jobSalary": "60000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Bounty Hunter",
+            "jobSalary": "120000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Padawan",
+            "jobSalary": "350000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "X Wing Pilot",
+            "jobSalary": "700000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Jedi Knight",
+            "jobSalary": "1000000",
+            "jobDegree": "2"
+          },
+          {
+            "jobName": "Jedi Master",
+            "jobSalary": "2000000",
+            "jobDegree": "2"
+          }
+        ]
+      },
+      {
+        "name": "Moron",
+        "job": [
+          {
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Parachute Tester",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Crash Test Dummy",
+            "jobSalary": "40000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "King's Poison Tester",
+            "jobSalary": "90000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Hot Coal Walker",
+            "jobSalary": "200000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Sword Swallower",
+            "jobSalary": "500000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Dome Motorcyclist",
+            "jobSalary": "1000000",
+            "jobDegree": "3"
+          },
+          {
+            "jobSalary": "2000000",
+            "jobDegree": "3"
+          },
+          {
+            "jobSalary": "3000000",
+            "jobDegree": "3"
+          }
+        ]
+      },
+      {
+        "name": "Holiday",
+        "job": [
+          {
+            "jobName": "Parade Float",
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Arbor Day Tree Planter",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Elf",
+            "jobSalary": "20000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Cupid",
+            "jobSalary": "45000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Leprechaun",
+            "jobSalary": "100000",
+            "jobDegree": "1"
+          },
+          {
+            "jobName": "Sandman",
+            "jobSalary": "500000",
+            "jobDegree": "2"
+          },
+          {
+            "jobName": "Tooth Fairy",
+            "jobSalary": "700000",
+            "jobDegree": "2"
+          },
+          {
+            "jobName": "Easter Bunny",
+            "jobSalary": "1000000",
+            "jobDegree": "2"
+          },
+          {
+            "jobName": "Santa",
+            "jobSalary": "2500000",
+            "jobDegree": "2"
+          }
+        ]
+      },
+      {
+        "name": "Animorph",
+        "job": [
+          {
+            "jobSalary": "1000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Mouse",
+            "jobSalary": "5000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Dog",
+            "jobSalary": "20000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Peregrine Falcon",
+            "jobSalary": "60000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Shark",
+            "jobSalary": "100000",
+            "jobDegree": "0"
+          },
+          {
+            "jobName": "Tiger",
+            "jobSalary": "300000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Hork Bajir",
+            "jobSalary": "700000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Andolite",
+            "jobSalary": "1000000",
+            "jobDegree": "3"
+          },
+          {
+            "jobName": "Dragon",
+            "jobSalary": "2200000",
+            "jobDegree": "3"
+          }
+        ]
+      }
+    ]
+  }
+}
