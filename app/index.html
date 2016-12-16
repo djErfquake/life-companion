@@ -23,7 +23,12 @@
           <!-- Title -->
           <span class="mdl-layout-title">LIFE Companion</span>
           <div class="mdl-layout-spacer"></div>
-          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">30 Turns Left</span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right life-currentPlayerName" rv-text="currentPlayer.name"></span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> : </span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right life-turnsLeft" rv-text="turnsLeft"></span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> years left</span>
+
+          <div><button class="mdl-button mdl-js-button mdl-button--accent exit-button">X</button></div>
         </div>
 
         <!-- Tabs -->
@@ -39,98 +44,72 @@
         </div>
 
       </header>
+
+      <!-- player side drawer -->
       <div class="mdl-layout__drawer">
         <!-- drawer content goes here -->
         <span class="mdl-layout-title">Players</span>
 
-        <div class="demo-list-action mdl-list">
-          <div class="mdl-list__item">
+        <div class="demo-list-action mdl-list life-playerlist">
+
+          <!-- one of these for each player -->
+          <div class="mdl-list__item life-playerTab" rv-each-player="players" rv-on-click="playerClicked">
             <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-0" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-0">Player 0 Name</button>
+              <span><img class="avatar" rv-src="player.avatar"></img></span>
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect" rv-text="player.name"></button>
             </span>
             <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-1" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-1">Player 1 Name</button>
-            </span>
-            <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-2" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-2">Player 2 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-3" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-3">Player 3 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-4" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-4">Player 4 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-5" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-5">Player 5 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-6" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-6">Player 6 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
-          </div>
-          <div class="mdl-list__item">
-            <span class="mdl-list__item-primary-content">
-              <span><img class="avatar avatar-image-7" src=""></img></span>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect life-playerlist-name-7">Player 7 Name</button>
-            </span>
-            <span class="mdl-list__item-secondary-content">
-              <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
-            </span>
           </div>
 
         </div>
 
       </div>
+
+      <!-- main page content -->
       <main class="mdl-layout__content">
-        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+        <section class="mdl-layout__tab-panel life-tab-spinner is-active" id="fixed-tab-1">
           <div class="page-content"><!-- Your content goes here --></div>
         </section>
-        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <section class="mdl-layout__tab-panel life-tab-lifepoints" id="fixed-tab-2">
           <div class="page-content">
+            <!-- lifepoints content goes here -->
 
-            <!-- tab three content goes here -->
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">face</i></button>
-            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">face</i></button>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-lifepoints">
+                    <label class="mdl-textfield__label">Lifepoints to add or subtract</label>
+                    <span class="mdl-textfield__error">That's not a number!</span>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-lifepoints">Subtract</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-lifepoints">Add</button>
+                </div>
+            </div>
 
+            <!-- end of lifepoints content -->
+          </div>
+        </section>
+        <section class="mdl-layout__tab-panel life-tab-money" id="fixed-tab-3">
+          <div class="page-content">
+            <!-- money content goes here -->
 
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-money">
+                    <label class="mdl-textfield__label">Money to add or subtract</label>
+                    <span class="mdl-textfield__error">That's not a number!</span>
+                  </div>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-money">Subtract</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-money">Add</button>
+                </div>
+            </div>
+
+            <!-- end of money content -->
           </div>
         </section>
         <section class="mdl-layout__tab-panel" id="fixed-tab-4">
@@ -164,8 +143,10 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/material-design/material.min.js"></script>
-    <script src="vendor/please/Please-compressed.js"></script>
+    <script src="vendor/rivets/rivets.bundled.min.js"></script>
     <script src="vendor/chance/chance.min.js"></script>
+    <script src="vendor/please/Please-compressed.js"></script>
+
     <script src="js/config.js" type="text/javascript"></script>
     <script src="js/player.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>

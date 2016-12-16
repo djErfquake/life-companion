@@ -1,11 +1,12 @@
 class Player {
 
-  constructor(playerName) {
+  constructor(playerName, avatarImage) {
     this.name = playerName;
 
     this.goneThisTurn = false;
 
     this.color = Please.make_color();
+    this.avatar = avatarImage;
 
     this.lifepoints = 0;
     this.money = 0;
