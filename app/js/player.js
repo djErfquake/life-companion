@@ -5,7 +5,7 @@ class Player {
 
     this.goneThisTurn = false;
 
-    this.color = Please.make_color();
+    this.color = Please.make_color({base_color: '#2196f3'});
     this.avatar = avatarImage;
 
     this.lifepoints = 0;

@@ -19,14 +19,12 @@
     <!-- NAV BAR -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
       <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
+        <div class="mdl-layout__header-row life-header">
           <!-- Title -->
-          <span class="mdl-layout-title">LIFE Companion</span>
+          <span class="mdl-layout-title">{currentPlayer.name}</span>
           <div class="mdl-layout-spacer"></div>
-          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right life-currentPlayerName" rv-text="currentPlayer.name"></span>
-          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> : </span>
-          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right life-turnsLeft" rv-text="turnsLeft"></span>
-          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"> years left</span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">{turnsLeft} </span>
+          <span class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">years left</span>
 
           <div><button class="mdl-button mdl-js-button mdl-button--accent exit-button">X</button></div>
         </div>
@@ -75,17 +73,20 @@
             <!-- lifepoints content goes here -->
 
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-lifepoints">
-                    <label class="mdl-textfield__label">Lifepoints to add or subtract</label>
-                    <span class="mdl-textfield__error">That's not a number!</span>
-                  </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                <h2>{currentPlayer.lifepoints}</h2>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-lifepoints">
+                  <label class="mdl-textfield__label">Lifepoints to add or subtract</label>
+                  <span class="mdl-textfield__error">That's not a number!</span>
                 </div>
-                <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-lifepoints">Subtract</button>
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-lifepoints">Add</button>
-                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-lifepoints">Subtract</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-lifepoints">Add</button>
+              </div>
             </div>
 
             <!-- end of lifepoints content -->
@@ -96,17 +97,20 @@
             <!-- money content goes here -->
 
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-money">
-                    <label class="mdl-textfield__label">Money to add or subtract</label>
-                    <span class="mdl-textfield__error">That's not a number!</span>
-                  </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                <h2>{currentPlayer.money}</h2>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="life-input-money">
+                  <label class="mdl-textfield__label">Money to add or subtract</label>
+                  <span class="mdl-textfield__error">That's not a number!</span>
                 </div>
-                <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-money">Subtract</button>
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-money">Add</button>
-                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col  mdl-cell--3-offset">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent life-subtract-money">Subtract</button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored life-add-money">Add</button>
+              </div>
             </div>
 
             <!-- end of money content -->

@@ -21,26 +21,49 @@ for (let i = 0; i < 8; i++) {
 currentPlayer = players[0];
 
 
-// player click functionality
-$('.life-playerTab').click(function() {
-  let playerIndex = $(this).index();
-  currentPlayer = players[playerIndex];
-  $(this).css('background_color', currentPlayer.color);
-  console.log("jquery currentPlayer", currentPlayer);
-});
 
+// player click functionality
 let playerClicked = function() {
   let playerIndex = $(this).index();
   currentPlayer = players[playerIndex];
-  $(this).css('background_color', currentPlayer.color);
-  console.log("rv currentPlayer", currentPlayer);
+  $('.life-playerTab').children().each(function() {
+    $(this).css('background-color', '#efefef');
+  });
+  $(this).css('background-color', currentPlayer.color);
+  console.log("player clicked: ", currentPlayer);
 };
 
 
+// life points add/subtract
+$('.life-add-lifepoints').click(function() {
+  let lp = parseInt($('#life-input-lifepoints').val());
+  console.log("adding " + lp + " lifepoints for " + currentPlayer.name);
+  currentPlayer.lifepoints += lp;
+});
+$('.life-subtract-lifepoints').click(function() {
+  let lp = parseInt($('#life-input-lifepoints').val());
+  console.log("subtracting " + lp + " lifepoints for " + currentPlayer.name);
+  currentPlayer.lifepoints -= lp;
+});
+
+// money add/subtract
+$('.life-add-money').click(function() {
+  let m = parseInt($('#life-input-money').val());
+  console.log("adding $" + m + " for " + currentPlayer.name);
+  currentPlayer.money += m;
+});
+$('.life-subtract-money').click(function() {
+  let m = parseInt($('#life-input-money').val());
+  console.log("subtracting $" + m + " for " + currentPlayer.name);
+  currentPlayer.money -= m;
+});
+
+
+
 // rivets binding
-rivets.bind(document.querySelector('.life-turnsLeft'), {turnsLeft: turnsLeft});
-rivets.bind(document.querySelector('.life-currentPlayerName'), {currentPlayer: currentPlayer});
-rivets.bind(document.querySelector('.life-playerlist'), {players: players, playerClicked: playerClicked});
+rivets.bind($('.life-playerlist'), {players: players, playerClicked: playerClicked});
+rivets.bind($('header'), {currentPlayer: currentPlayer, turnsLeft: turnsLeft});
+rivets.bind($('section'), {currentPlayer: currentPlayer});
 
 
 
